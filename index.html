@@ -7,7 +7,7 @@
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=1920 height=1080 tabindex="-1" style="width: 1920px; height: 1080px; background: #231F20"></canvas>
-    <script src="Build/StreetSpeedWebGL.loader.js"></script>
+    <script src="Build/SS_Build.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -26,9 +26,9 @@
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
         arguments: [],
-        dataUrl: "https://media.githubusercontent.com/media/0xUgly/StreetSpeed/main/Build/StreetSpeedWebGL.data",
-        frameworkUrl: "Build/StreetSpeedWebGL.framework.js",
-        codeUrl: "Build/StreetSpeedWebGL.wasm",
+        dataUrl: "Build/SS_Build.data",
+        frameworkUrl: "Build/SS_Build.framework.js",
+        codeUrl: "Build/SS_Build.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "StreetSpeed",
